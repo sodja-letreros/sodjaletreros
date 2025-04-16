@@ -2,17 +2,6 @@
 <!DOCTYPE html>
 
 <html lang="es">
-<!-- AOS Animate On Scroll Library -->
-<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
-<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-<script>
-  document.addEventListener('DOMContentLoaded', function () {
-    AOS.init({
-      duration: 1000,
-      once: true
-    });
-  });
-</script>
 <head>
 <meta charset="utf-8"/>
 <title>Portfolio SODJA</title>
@@ -27,21 +16,77 @@
     .gallery img { height: 250px; border-radius: 10px; box-shadow: 0 0 10px rgba(0,0,0,0.2); }
     footer { background: #1e1a47; color: white; text-align: center; padding: 20px; font-size: 16px; }
   </style>
+
+<!-- Google Fonts: Poppins -->
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+<style>
+  body {
+    font-family: 'Poppins', sans-serif;
+    color: #1e1a47;
+  }
+  h1, h2, h3, h4 {
+    color: #e91e63;
+  }
+  a {
+    color: #e91e63;
+    text-decoration: none;
+  }
+  a:hover {
+    text-decoration: underline;
+  }
+  footer {
+    background: #1e1a47;
+    color: white;
+    padding: 20px;
+    text-align: center;
+  }
+</style>
+
+<!-- AOS Animate On Scroll Library -->
+<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script>
+  document.addEventListener('DOMContentLoaded', function () {
+    AOS.init({
+      duration: 1000,
+      once: true
+    });
+  });
+</script>
+
+
+<style>
+  .leyenda-slide {
+    opacity: 0;
+    transform: translateX(100px);
+    animation: slideInRight 1s ease-out forwards;
+    animation-delay: 0.3s;
+    font-size: 18px;
+    color: #1e1a47;
+    font-weight: 400;
+    margin-top: -10px;
+    margin-bottom: 15px;
+  }
+
+  @keyframes slideInRight {
+    to {
+      opacity: 1;
+      transform: translateX(0);
+    }
+  }
+</style>
+
 </head>
 <body>
 <header>
-<img alt="Logo SODJA" src="images/logo_grande.png" style="max-width: 300px; height: auto; display: block; margin: 0 auto;"/>
+<img alt="Logo SODJA" src="images/logo_grande.png" style="max-width: 300px; height: auto; display: block; margin: 0 auto;"/ data-aos="fade-up" data-aos="fade-up">
 
 </header>
 <section class="intro"><p>En Grupo Sodja somos líderes en soluciones de cartelería e imagen en todo el NEA, y brindamos nuestros servicios en toda la República Argentina.
-    Con más de 60 años de trayectoria, nos especializamos en la fabricación, instalación y mantenimiento de letreros luminosos, letras corpóreas, marquesinas, imagen integral y estructuras visuales de gran impacto. Combinamos tecnología, diseño y experiencia para ofrecer productos de calidad que hacen destacar tu marca.</p></section> 
-<section><h2>Banco Santander</h2><div class="gallery"><img src="images/santander1.jpg"/><img src="images/santander2.jpg"/><img src="images/santander3.jpg"/><img src="images/santander4.jpg"/><img src="images/santander5.jpg"/><img src="images/santander6.jpg"/><img src="images/santander7.jpg"/></div><p>Más de 150 sucursales en todo el país</p></section>
-<section><h2>Banco Patagonia</h2><div class="gallery"><img src="images/bancopatagonia1.jpg"/><img src="images/bancopatagonia2.jpg"/><img src="images/bancopatagonia3.jpg"/><img src="images/bancopatagonia4.jpg"/><img src="images/bancopatagonia5.jpg"/><img src="images/bancopatagonia6.jpg"/><img src="images/bancopatagonia7.jpg"/><img src="images/bancopatagonia8.jpg"/><img src="images/bancopatagonia9.jpg"/><img src="images/bancopatagonia10.jpg"/><img src="images/bancopatagonia11.jpg"/><img src="images/bancopatagonia12.jpg"/><img src="images/bancopatagonia13.jpg"/><img src="images/bancopatagonia14.jpg"/><img src="images/bancopatagonia15.jpg"/></div><p>Banco Patagonia - Más de 50 sucursales en todo el país</p></section>
-<section><h2>Nuevo Banco del Chaco</h2><div class="gallery"><img src="images/nbch1.jpg"/><img src="images/nbch2.jpg"/><img src="images/nbch3.jpg"/><img src="images/nbch4.jpg"/><img src="images/nbch5.jpg"/><img src="images/nbch6.jpg"/><img src="images/nbch7.jpg"/><img src="images/nbch8.jpg"/><img src="images/nbch9.jpg"/><img src="images/nbch10.jpg"/><img src="images/nbch11.jpg"/><img src="images/nbch12.jpg"/><img src="images/nbch13.jpg"/></div><p>Más de 30 años en la imagen integral</p></section>
-<section><h2>Familia Familia Bercomat</h2><div class="gallery"><img src="images/bercomat1.jpg"/><img src="images/bercomat2.jpg"/><img src="images/bercomat3.jpg"/><img src="images/bercomat4.jpg"/><img src="images/bercomat5.jpg"/><img src="images/bercomat6.jpg"/><img src="images/bercomat7.jpg"/><img src="images/bercomat8.jpg"/><img src="images/bercomat9.jpg"/></div><p>Cambio de imagen y mantenimiento en todas las sucursales.</p></section>
-<section><h2>Rapipago</h2><div class="gallery"><img src="images/rapipago1.jpg"/><img src="images/rapipago2.jpg"/><img src="images/rapipago3.jpg"/><img src="images/rapipago4.jpg"/></div><p>Más de 25 años imagen integral - nivel país</p></section>
-<section><h2>UNNE</h2><div class="gallery"><img src="images/unne1.jpg"/><img src="images/unne2.jpg"/><img src="images/unne3.jpg"/></div><p>Letras corpóreas de chapa a gran escala para la facultad de arquitectura y urbanismo</p></section>
-    <!-- Botón flotante de WhatsApp -->
+    Con más de 60 años de trayectoria, nos especializamos en la fabricación, instalación y mantenimiento de letreros luminosos, letras corpóreas, marquesinas, imagen integral y estructuras visuales de gran impacto. Combinamos tecnología, diseño y experiencia para ofrecer productos de calidad que hacen destacar tu marca.</p></section>
+<section><h2>Rapipago</h2><div class="gallery"><img src="images/rapipago1.jpg"/ data-aos="fade-up"><img src="images/rapipago2.jpg"/ data-aos="fade-up"><img src="images/rapipago3.jpg"/ data-aos="fade-up"><img src="images/rapipago4.jpg"/ data-aos="fade-up"></div><p>Más de 25 años imagen integral - nivel país</p></section><section><h2>Banco Patagonia</h2><div class="gallery"><img src="images/bancopatagonia1.jpg"/ data-aos="fade-up"><img src="images/bancopatagonia2.jpg"/ data-aos="fade-up"><img src="images/bancopatagonia3.jpg"/ data-aos="fade-up"><img src="images/bancopatagonia4.jpg"/ data-aos="fade-up"><img src="images/bancopatagonia5.jpg"/ data-aos="fade-up"><img src="images/bancopatagonia6.jpg"/ data-aos="fade-up"><img src="images/bancopatagonia7.jpg"/ data-aos="fade-up"><img src="images/bancopatagonia8.jpg"/ data-aos="fade-up"><img src="images/bancopatagonia9.jpg"/ data-aos="fade-up"><img src="images/bancopatagonia10.jpg"/ data-aos="fade-up"><img src="images/bancopatagonia11.jpg"/ data-aos="fade-up"><img src="images/bancopatagonia12.jpg"/ data-aos="fade-up"><img src="images/bancopatagonia13.jpg"/ data-aos="fade-up"><img src="images/bancopatagonia14.jpg"/ data-aos="fade-up"><img src="images/bancopatagonia15.jpg"/ data-aos="fade-up"></div><p>Banco Patagonia - Más de 50 sucursales en todo el país</p></section><section><h2>Nuevo Banco del Chaco</h2><div class="gallery"><img src="images/nbch1.jpg"/ data-aos="fade-up"><img src="images/nbch2.jpg"/ data-aos="fade-up"><img src="images/nbch3.jpg"/ data-aos="fade-up"><img src="images/nbch4.jpg"/ data-aos="fade-up"><img src="images/nbch5.jpg"/ data-aos="fade-up"><img src="images/nbch6.jpg"/ data-aos="fade-up"><img src="images/nbch7.jpg"/ data-aos="fade-up"><img src="images/nbch8.jpg"/ data-aos="fade-up"><img src="images/nbch9.jpg"/ data-aos="fade-up"><img src="images/nbch10.jpg"/ data-aos="fade-up"><img src="images/nbch11.jpg"/ data-aos="fade-up"><img src="images/nbch12.jpg"/ data-aos="fade-up"><img src="images/nbch13.jpg"/ data-aos="fade-up"></div><p>Más de 30 años en la imagen integral</p></section><section><h2>Banco Banco Santander</h2><div class="gallery"><img src="images/santander1.jpg"/ data-aos="fade-up"><img src="images/santander2.jpg"/ data-aos="fade-up"><img src="images/santander3.jpg"/ data-aos="fade-up"><img src="images/santander4.jpg"/ data-aos="fade-up"><img src="images/santander5.jpg"/ data-aos="fade-up"><img src="images/santander6.jpg"/ data-aos="fade-up"><img src="images/santander7.jpg"/ data-aos="fade-up"></div><p>Más de 150 sucursales en todo el país</p></section><section><h2>UNNE</h2><div class="gallery"><img src="images/unne1.jpg"/ data-aos="fade-up"><img src="images/unne2.jpg"/ data-aos="fade-up"><img src="images/unne3.jpg"/ data-aos="fade-up"></div><p>Letras corpóreas de chapa a gran escala para la facultad de arquitectura y urbanismo</p></section><section><h2>Familia Familia Bercomat</h2><div class="gallery"><img src="images/bercomat1.jpg"/ data-aos="fade-up"><img src="images/bercomat2.jpg"/ data-aos="fade-up"><img src="images/bercomat3.jpg"/ data-aos="fade-up"><img src="images/bercomat4.jpg"/ data-aos="fade-up"><img src="images/bercomat5.jpg"/ data-aos="fade-up"><img src="images/bercomat6.jpg"/ data-aos="fade-up"><img src="images/bercomat7.jpg"/ data-aos="fade-up"><img src="images/bercomat8.jpg"/ data-aos="fade-up"><img src="images/bercomat9.jpg"/ data-aos="fade-up"></div><p>Cambio de imagen y mantenimiento en todas las sucursales.</p></section>
+
+<!-- Botón flotante de WhatsApp -->
 <a href="https://wa.me/5491121577000" 
    style="position: fixed; bottom: 20px; right: 20px; background-color: #25D366; color: white; padding: 12px 20px; border-radius: 30px; text-decoration: none; font-weight: bold; box-shadow: 0 4px 8px rgba(0,0,0,0.3); z-index:1000; font-family: Poppins, sans-serif;"
    target="_blank">
